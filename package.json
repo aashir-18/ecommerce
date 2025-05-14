@@ -1,0 +1,29 @@
+{
+  "name": "e-commerce-admin-dashboard",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "vite",
+    "deploy": "vite build && netlify deploy --prod"
+  },
+  "dependencies": {
+    "ag-grid-community": "^31.0.3",
+    "ag-grid-vue3": "^31.0.3",
+    "axios": "^1.6.7",
+    "chart.js": "^4.4.1",
+    "pinia": "^2.1.7",
+    "primeicons": "^6.0.1",
+    "primevue": "^3.30.2",
+    "vue": "^3.4.21",
+    "vue-chartjs": "^5.2.0",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.3",
+    "vite": "^6.3.5"
+  }
+}

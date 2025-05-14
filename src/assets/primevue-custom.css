@@ -1,0 +1,283 @@
+/* Custom PrimeVue styling */
+
+/* Button styles */
+.p-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  border: none;
+  background-color: #409eff;
+  color: white;
+}
+
+.p-button:hover {
+  background-color: #66b1ff;
+}
+
+.p-button-text {
+  background-color: transparent;
+  color: #409eff;
+}
+
+.p-button-text:hover {
+  background-color: rgba(64, 158, 255, 0.1);
+}
+
+.p-button-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+/* DataTable styles */
+.p-datatable {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.875rem;
+}
+
+.p-datatable-header {
+  background-color: #f8f9fa;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.p-datatable-thead > tr > th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e9ecef;
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.p-datatable-tbody > tr > td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.p-datatable-tbody > tr:hover {
+  background-color: #f8f9fa;
+}
+
+.p-datatable-sm .p-datatable-thead > tr > th,
+.p-datatable-sm .p-datatable-tbody > tr > td {
+  padding: 0.5rem 0.75rem;
+}
+
+/* Dropdown styles */
+.p-dropdown {
+  display: inline-flex;
+  position: relative;
+  border: 1px solid #dcdfe6;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: border-color 0.3s;
+  width: 100%;
+}
+
+.p-dropdown:hover {
+  border-color: #c0c4cc;
+}
+
+.p-dropdown-label {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.p-dropdown-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5rem;
+}
+
+/* InputText styles */
+.p-inputtext {
+  padding: 0.5rem;
+  border: 1px solid #dcdfe6;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.p-inputtext:focus {
+  outline: none;
+  border-color: #409eff;
+}
+
+.p-inputtext.p-invalid {
+  border-color: #f56c6c;
+}
+
+/* Toast styles */
+.p-toast {
+  position: fixed;
+  width: 25rem;
+  right: 1rem;
+  top: 1rem;
+  z-index: 1000;
+}
+
+.p-toast-message {
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.p-toast-message-success {
+  background-color: #f0f9eb;
+  border-left: 4px solid #67c23a;
+  color: #67c23a;
+}
+
+.p-toast-message-error {
+  background-color: #fef0f0;
+  border-left: 4px solid #f56c6c;
+  color: #f56c6c;
+}
+
+/* Dialog styles */
+.p-dialog {
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.p-dialog-header {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #ebeef5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.p-dialog-title {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.p-dialog-content {
+  padding: 1.5rem;
+}
+
+.p-dialog-footer {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #ebeef5;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+/* FileUpload styles */
+.p-fileupload {
+  width: 100%;
+}
+
+.p-fileupload-buttonbar {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.5rem 0;
+}
+
+/* Calendar styles */
+.p-calendar {
+  display: inline-flex;
+  position: relative;
+  width: 100%;
+}
+
+/* Chart container */
+.p-chart {
+  width: 100%;
+  height: 100%;
+}
+
+/* Progress Spinner */
+.p-progress-spinner {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+}
+
+.p-progress-spinner-circle {
+  stroke: #409eff;
+  stroke-dasharray: 89, 200;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+}
+
+/* TabView styles */
+.p-tabview {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-tabview-nav {
+  display: flex;
+  border-bottom: 1px solid #e9ecef;
+  margin-bottom: 1rem;
+}
+
+.p-tabview-nav-link {
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: color 0.3s, border-color 0.3s;
+  color: #606266;
+  font-weight: 500;
+}
+
+.p-tabview-nav-link:hover {
+  color: #409eff;
+}
+
+.p-tabview-selected .p-tabview-nav-link {
+  color: #409eff;
+  border-bottom-color: #409eff;
+}
+
+.p-tabview-panels {
+  padding: 1rem 0;
+}
+
+/* Input with icon */
+.p-input-icon-left {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.p-input-icon-left > i {
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #606266;
+}
+
+.p-input-icon-left > .p-inputtext {
+  padding-left: 2rem;
+}
+
+/* Utility classes */
+.w-full {
+  width: 100%;
+}
+
+.p-error {
+  color: #f56c6c;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}

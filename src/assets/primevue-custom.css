@@ -1,35 +1,52 @@
 /* Custom PrimeVue styling */
 
+/* Global styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f5f7;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
 /* Button styles */
 .p-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
+  padding: 0.5rem 1.25rem;
+  border-radius: 6px;
   font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
   border: none;
-  background-color: #409eff;
+  background-color: #007bff;
   color: white;
+  box-shadow: 0 2px 4px rgba(0, 123, 255, 0.2);
 }
 
 .p-button:hover {
-  background-color: #66b1ff;
+  background-color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
 }
 
 .p-button-text {
   background-color: transparent;
-  color: #409eff;
+  color: #007bff;
 }
 
 .p-button-text:hover {
-  background-color: rgba(64, 158, 255, 0.1);
+  background-color: rgba(0, 123, 255, 0.1);
 }
 
 .p-button-sm {
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 0.75rem;
   font-size: 0.875rem;
 }
 
@@ -38,10 +55,14 @@
   border-collapse: collapse;
   width: 100%;
   font-size: 0.875rem;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .p-datatable-header {
-  background-color: #f8f9fa;
+  background-color: #f1f3f5;
   padding: 0.75rem 1rem;
   font-weight: 600;
   border-bottom: 1px solid #e9ecef;
@@ -51,9 +72,9 @@
   text-align: left;
   padding: 0.75rem 1rem;
   border-bottom: 1px solid #e9ecef;
-  background-color: #f8f9fa;
+  background-color: #f1f3f5;
   font-weight: 600;
-  color: #2c3e50;
+  color: #495057;
 }
 
 .p-datatable-tbody > tr > td {
@@ -74,15 +95,15 @@
 .p-dropdown {
   display: inline-flex;
   position: relative;
-  border: 1px solid #dcdfe6;
-  border-radius: 4px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
   background-color: #fff;
   transition: border-color 0.3s;
   width: 100%;
 }
 
 .p-dropdown:hover {
-  border-color: #c0c4cc;
+  border-color: #adb5bd;
 }
 
 .p-dropdown-label {
@@ -102,8 +123,8 @@
 /* InputText styles */
 .p-inputtext {
   padding: 0.5rem;
-  border: 1px solid #dcdfe6;
-  border-radius: 4px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
   transition: border-color 0.3s;
   width: 100%;
   font-size: 1rem;
@@ -111,11 +132,11 @@
 
 .p-inputtext:focus {
   outline: none;
-  border-color: #409eff;
+  border-color: #007bff;
 }
 
 .p-inputtext.p-invalid {
-  border-color: #f56c6c;
+  border-color: #dc3545;
 }
 
 /* Toast styles */
@@ -129,21 +150,21 @@
 
 .p-toast-message {
   margin-bottom: 0.5rem;
-  border-radius: 4px;
+  border-radius: 6px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
   padding: 1rem;
 }
 
 .p-toast-message-success {
-  background-color: #f0f9eb;
-  border-left: 4px solid #67c23a;
-  color: #67c23a;
+  background-color: #e6ffed;
+  border-left: 4px solid #28a745;
+  color: #28a745;
 }
 
 .p-toast-message-error {
-  background-color: #fef0f0;
-  border-left: 4px solid #f56c6c;
-  color: #f56c6c;
+  background-color: #ffe6e6;
+  border-left: 4px solid #dc3545;
+  color: #dc3545;
 }
 
 /* Dialog styles */
@@ -212,7 +233,7 @@
 }
 
 .p-progress-spinner-circle {
-  stroke: #409eff;
+  stroke: #007bff;
   stroke-dasharray: 89, 200;
   stroke-dashoffset: 0;
   stroke-linecap: round;
@@ -235,17 +256,17 @@
   border-bottom: 2px solid transparent;
   cursor: pointer;
   transition: color 0.3s, border-color 0.3s;
-  color: #606266;
+  color: #495057;
   font-weight: 500;
 }
 
 .p-tabview-nav-link:hover {
-  color: #409eff;
+  color: #007bff;
 }
 
 .p-tabview-selected .p-tabview-nav-link {
-  color: #409eff;
-  border-bottom-color: #409eff;
+  color: #007bff;
+  border-bottom-color: #007bff;
 }
 
 .p-tabview-panels {
@@ -264,7 +285,7 @@
   left: 0.5rem;
   top: 50%;
   transform: translateY(-50%);
-  color: #606266;
+  color: #495057;
 }
 
 .p-input-icon-left > .p-inputtext {
@@ -277,7 +298,7 @@
 }
 
 .p-error {
-  color: #f56c6c;
+  color: #dc3545;
   font-size: 0.75rem;
   margin-top: 0.25rem;
 }
